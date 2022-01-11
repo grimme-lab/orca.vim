@@ -6,7 +6,8 @@ endif
 
 syn case ignore
 
-syn match simpleKeyword "!.*$" transparent contains=orcaKeyword,orcaComment,misplacedBang,simpleBang,orcaBasis
+syn match simpleKeyword "!.*$" transparent
+         \ contains=orcaKeyword,orcaComment,misplacedBang,simpleBang,orcaBasis
 syn match simpleBang contained "!.*$"me=s+1
 
 syn match orcaKeyword contained "\<FLOAT\>"
@@ -15,7 +16,7 @@ syn match orcaKeyword contained "\<UCFLOAT\>"
 syn match orcaKeyword contained "\<DOUBLE\>"
 syn match orcaKeyword contained "\<CDOUBLE\>"
 syn match orcaKeyword contained "\<UCDOUBLE\>"
-syn match orcaKeyword contained "\<\(R\|U\RO\)\(HF\|KS\)\>"
+syn match orcaKeyword contained "\<\(R\|U\|RO\)\(HF\|KS\)\>"
 syn match orcaKeyword contained "\<CASSCF\>"
 syn match orcaKeyword contained "\<MM\>"
 syn match orcaKeyword contained "\<\(XTB1\|GFN-XTB\)\>"
@@ -936,52 +937,52 @@ syn match orcaKeyword contained "\<SRLDA\>"
 syn match orcaKeyword contained "\<SRPBE\>"
 syn match orcaKeyword contained "\<FROZENCORE\>"
 syn match orcaKeyword contained "\<NOFROZENCORE\>"
-syn match orcaKeyword contained "\<GRID0_OLD\>"
-syn match orcaKeyword contained "\<GRID1_OLD\>"
-syn match orcaKeyword contained "\<GRID2_OLD\>"
-syn match orcaKeyword contained "\<GRID3_OLD\>"
-syn match orcaKeyword contained "\<GRID4_OLD\>"
-syn match orcaKeyword contained "\<GRID5_OLD\>"
-syn match orcaKeyword contained "\<GRID6_OLD\>"
-syn match orcaKeyword contained "\<GRID7_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID0_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID1_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID2_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID3_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID4_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID5_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID6_OLD\>"
-syn match orcaKeyword contained "\<FINALGRID7_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID0_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID1_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID2_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID3_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID4_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID5_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID6_OLD\>"
-syn match orcaKeyword contained "\<VDWGRID7_OLD\>"
+syn match orcaKeyword contained "\<GRID0\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID3\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID4\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID5\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID6\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRID7\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID0\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID3\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID4\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID5\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID6\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<FINALGRID7\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID0\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID3\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID4\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID5\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID6\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<VDWGRID7\(_OLD\)\?\>"
 syn match orcaKeyword contained "\<ROTINVGRID\>"
 syn match orcaKeyword contained "\<RIG\>"
-syn match orcaKeyword contained "\<GRIDX1_OLD\>"
-syn match orcaKeyword contained "\<GRIDX2_OLD\>"
-syn match orcaKeyword contained "\<GRIDX3_OLD\>"
-syn match orcaKeyword contained "\<GRIDX4_OLD\>"
-syn match orcaKeyword contained "\<GRIDX5_OLD\>"
-syn match orcaKeyword contained "\<GRIDX6_OLD\>"
-syn match orcaKeyword contained "\<GRIDX7_OLD\>"
-syn match orcaKeyword contained "\<GRIDX8_OLD\>"
-syn match orcaKeyword contained "\<GRIDX9_OLD\>"
-syn match orcaKeyword contained "\<GRIDXOLD_OLD\>"
-syn match orcaKeyword contained "\<GRIDXS1_OLD\>"
-syn match orcaKeyword contained "\<GRIDXS2_OLD\>"
-syn match orcaKeyword contained "\<MP2GRIDX1_OLD\>"
-syn match orcaKeyword contained "\<MP2GRIDX2_OLD\>"
-syn match orcaKeyword contained "\<MP2GRIDX3_OLD\>"
-syn match orcaKeyword contained "\<KCGRID1_OLD\>"
-syn match orcaKeyword contained "\<KCGRID2_OLD\>"
-syn match orcaKeyword contained "\<KCGRID3_OLD\>"
-syn match orcaKeyword contained "\<KCGRID4_OLD\>"
-syn match orcaKeyword contained "\<NOFINALGRID_OLD\>"
+syn match orcaKeyword contained "\<GRIDX1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX3\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX4\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX5\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX6\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX7\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX8\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDX9\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDXOLD\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDXS1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<GRIDXS2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<MP2GRIDX1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<MP2GRIDX2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<MP2GRIDX3\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<KCGRID1\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<KCGRID2\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<KCGRID3\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<KCGRID4\(_OLD\)\?\>"
+syn match orcaKeyword contained "\<NOFINALGRID\(_OLD\)\?\>"
 syn match orcaKeyword contained "\<NOFINALGRIDX\>"
 syn match orcaKeyword contained "\<USEFINALGRIDX\>"
 syn match orcaKeyword contained "\<USESFITTING\>"
@@ -990,15 +991,11 @@ syn match orcaKeyword contained "\<RIJKSINGLESFOCK\>"
 syn match orcaKeyword contained "\<NORIJKSINGLESFOCK\>"
 syn match orcaKeyword contained "\<RCSINGLESFOCK\>"
 syn match orcaKeyword contained "\<NORCSINGLESFOCK\>"
-syn match orcaKeyword contained "\<DEFGRID1\>"
-syn match orcaKeyword contained "\<DEFGRID2\>"
-syn match orcaKeyword contained "\<DEFGRID3\>"
+syn match orcaKeyword contained "\<DEFGRID\(1\|2\|3\)\>"
 syn match orcaKeyword contained "\<REFGRID\>"
-syn match orcaKeyword contained "\<XCFUN\>"
-syn match orcaKeyword contained "\<NOXCFUN\>"
-syn match orcaKeyword contained "\<SCNL\>"
+syn match orcaKeyword contained "\<\(NO\)\?XCFUN\>"
 syn match orcaKeyword contained "\<NL\>"
-syn match orcaKeyword contained "\<SCNL_OLD\>"
+syn match orcaKeyword contained "\<SCNL\(_OLD\)\?\>"
 syn match orcaKeyword contained "\<NOVDW\>"
 syn match orcaKeyword contained "\<VDW\>"
 syn match orcaKeyword contained "\<VDW10\>"
@@ -2144,130 +2141,699 @@ syn match orcaBlock "%maxcore\>" contains=startBlock
 syn match orcaBlock "%moread\>" contains=startBlock
 
 " block directive regions
-syn region methodBlock start="%method" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%basis" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%scf" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mp2" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%cis" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%tddft" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mrci" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%geom" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%freq" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%vpt2" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%esd" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%dftmrci" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%coords" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%output" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%ci" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%plots" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%parameters" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%ndoparas" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%rel" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%dkh" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%pal" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%cosmo" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%rr" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%eprnmr" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%loc" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%elprop" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%casscf" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mcrpa" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mdci" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%dlpnocc" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mm" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mtr" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%xes" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%chelpg" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%numgrad" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mecp" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%ecp" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%rocis" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%mrcc" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%cipsi" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%ice" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%iceci" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%md" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%nbo" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%lft" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%autoci" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%cpcm" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%cim" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%compound" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%neb" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%irc" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%anmr" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%cregen" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%confscript" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%anmrrc" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%qmmm" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%conical" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%ecrism" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%shark" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%symmetry" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%sym" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
-syn region methodBlock start="%xtb" end="end" 
-         \ transparent keepend extend fold contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%method" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock,orcaNumber,orcaString,orcaFloat,
+         \ orcaMethodInt,orcaMethodBool,orcaMethodReal,orcaMethodString,orcaMethodAlias,
+         \ orcaMethodLogical
+syn region methodBlock start="%basis" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%scf" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mp2" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%cis" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%tddft" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mrci" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%geom" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%freq" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%vpt2" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%esd" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%dftmrci" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%coords" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%output" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%ci" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%plots" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%parameters" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%ndoparas" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%rel" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%dkh" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%pal" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%cosmo" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%rr" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%eprnmr" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%loc" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%elprop" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%casscf" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mcrpa" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mdci" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%dlpnocc" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mm" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mtr" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%xes" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%chelpg" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%numgrad" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mecp" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%ecp" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%rocis" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%mrcc" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%cipsi" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%ice" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%iceci" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%md" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%nbo" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%lft" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%autoci" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%cpcm" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%cim" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%compound" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%neb" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%irc" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%anmr" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%cregen" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%confscript" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%anmrrc" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%qmmm" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%conical" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%ecrism" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%shark" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%symmetry" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%sym" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+syn region methodBlock start="%xtb" end="end"
+         \ transparent keepend extend fold
+         \ contains=startBlock,endBlock,orcaBlock
+
+syn match orcaMethodInt contained "\<VERSION\>"
+syn match orcaMethodInt contained "\<RUNTYP\>"
+syn match orcaMethodInt contained "\<AMASSES\>"
+syn match orcaMethodInt contained "\<SHARKPRINTLEVEL\>"
+syn match orcaMethodInt contained "\<SHARKFOCKFLAG\>"
+syn match orcaMethodInt contained "\<FROZENCORE\>"
+syn match orcaMethodInt contained "\<F12G_NGAUSS\>"
+syn match orcaMethodInt contained "\<SCANGUESS\>"
+syn match orcaMethodInt contained "\<RIFLAGS\>"
+syn match orcaMethodInt contained "\<FUNCTIONAL\>"
+syn match orcaMethodInt contained "\<XCKERNEL\>"
+syn match orcaMethodInt contained "\<EXCHANGE\>"
+syn match orcaMethodInt contained "\<CORRELATION\>"
+syn match orcaMethodInt contained "\<LDAOPT\>"
+syn match orcaMethodInt contained "\<XCKERNELX\>"
+syn match orcaMethodInt contained "\<XCKERNELC\>"
+syn match orcaMethodInt contained "\<XCKERNEL_X\>"
+syn match orcaMethodInt contained "\<XCKERNEL_C\>"
+syn match orcaMethodInt contained "\<XCKERNELLDA\>"
+syn match orcaMethodInt contained "\<ADFTNRMAXITER\>"
+syn match orcaMethodInt contained "\<ADFTLMAXAUXJ\>"
+syn match orcaMethodInt contained "\<ADFTLMAXAUXX\>"
+syn match orcaMethodInt contained "\<RADIALGRID\>"
+syn match orcaMethodInt contained "\<ANGULARGRID\>"
+syn match orcaMethodInt contained "\<PRUNEGRID\>"
+syn match orcaMethodInt contained "\<GRIDPRUNING\>"
+syn match orcaMethodInt contained "\<WEIGHTSCHEME\>"
+syn match orcaMethodInt contained "\<VDWRADIALGRID\>"
+syn match orcaMethodInt contained "\<VDWGRIDPRUNING\>"
+syn match orcaMethodInt contained "\<VDWANGULARGRID\>"
+syn match orcaMethodInt contained "\<DFTXCGradVersion\>"
+syn match orcaMethodInt contained "\<XCGradVersion\>"
+syn match orcaMethodInt contained "\<DFTXCGradMode\>"
+syn match orcaMethodInt contained "\<XCGradMode\>"
+syn match orcaMethodInt contained "\<XCHessFlags\>"
+syn match orcaMethodInt contained "\<DFTXCHessFlags\>"
+syn match orcaMethodInt contained "\<XCHessMode\>"
+syn match orcaMethodInt contained "\<DFTXCHessMode\>"
+syn match orcaMethodInt contained "\<DFTXCHessFXMode\>"
+syn match orcaMethodInt contained "\<ReduceRHSDFTHess  \>"
+syn match orcaMethodInt contained "\<SPECIALGRIDATOMS\>"
+syn match orcaMethodInt contained "\<GRID_X\>"
+syn match orcaMethodInt contained "\<GRIDX\>"
+syn match orcaMethodInt contained "\<ANGULARGRIDX\>"
+syn match orcaMethodInt contained "\<XCORRECTION\>"
+syn match orcaMethodInt contained "\<SFITINVERTTYPE\>"
+syn match orcaMethodInt contained "\<KTYPE\>"
+syn match orcaMethodInt contained "\<JTYPE\>"
+syn match orcaMethodInt contained "\<COSXGRADTYPE\>"
+syn match orcaMethodInt contained "\<RCSINGLESFOCK\>"
+syn match orcaMethodInt contained "\<RIJKSINGLESFOCK\>"
+syn match orcaMethodInt contained "\<GRID_X_FIN\>"
+syn match orcaMethodInt contained "\<GRIDX_FIN\>"
+syn match orcaMethodInt contained "\<RADIALGRID_FIN\>"
+syn match orcaMethodInt contained "\<ANGULARGRID_FIN\>"
+syn match orcaMethodInt contained "\<PRUNEGRID_FIN\>"
+syn match orcaMethodInt contained "\<GRIDPRUNING_FIN\>"
+syn match orcaMethodInt contained "\<WEIGHTSCHEME_FIN\>"
+syn match orcaMethodInt contained "\<GRID\>"
+syn match orcaMethodInt contained "\<FINALGRID\>"
+syn match orcaMethodInt contained "\<DFTDOPT\>"
+syn match orcaMethodInt contained "\<FUNCTIONALVDW\>"
+syn match orcaMethodInt contained "\<Z_SOLVER\>"
+syn match orcaMethodInt contained "\<CISGRAD_Z_SOLVER\>"
+syn match orcaMethodInt contained "\<TDDFTGRAD_Z_SOLVER\>"
+syn match orcaMethodInt contained "\<Z_MAXITER\>"
+syn match orcaMethodInt contained "\<Z_MAXDIIS\>"
+syn match orcaMethodInt contained "\<Z_GRIDXC\>"
+syn match orcaMethodInt contained "\<Z_GRIDX\>"
+syn match orcaMethodInt contained "\<Z_GRIDX_RHS\>"
+syn match orcaMethodInt contained "\<Z_COSX_ALG\>"
+
+syn match orcaMethodBool contained "\<CHECKFROZENCORE\>"
+syn match orcaMethodBool contained "\<USESYMMETRY\>"
+syn match orcaMethodBool contained "\<USESYM\>"
+syn match orcaMethodBool contained "\<SYMRELAX\>"
+syn match orcaMethodBool contained "\<SYMNOCOORDINATETRANSFORM\>"
+syn match orcaMethodBool contained "\<DOMP2\>"
+syn match orcaMethodBool contained "\<DOMREOM\>"
+syn match orcaMethodBool contained "\<DOORBSELECT\>"
+syn match orcaMethodBool contained "\<USELIBINT\>"
+syn match orcaMethodBool contained "\<USESHARK\>"
+syn match orcaMethodBool contained "\<SHARKUSEGENERALCONTRACTION\>"
+syn match orcaMethodBool contained "\<RANGESEPEXX\>"
+syn match orcaMethodBool contained "\<SWITCHTOSOSCF\>"
+syn match orcaMethodBool contained "\<REDUCEPRINT\>"
+syn match orcaMethodBool contained "\<ALLOWRHF\>"
+syn match orcaMethodBool contained "\<RI\>"
+syn match orcaMethodBool contained "\<DOADFT\>"
+syn match orcaMethodBool contained "\<HGRIDREDUCED\>"
+syn match orcaMethodBool contained "\<ROTINVARIANT\>"
+syn match orcaMethodBool contained "\<REDUCEPMODELGRID\>"
+syn match orcaMethodBool contained "\<VDWROTINVARIANT\>"
+syn match orcaMethodBool contained "\<DFTXC_IsNumWD\>"
+syn match orcaMethodBool contained "\<DFTXC_IsNumWG\>"
+syn match orcaMethodBool contained "\<XC_IsNumWD\>"
+syn match orcaMethodBool contained "\<XC_IsNumWG\>"
+syn match orcaMethodBool contained "\<XCIsNumWD\>"
+syn match orcaMethodBool contained "\<XCIsNumWG\>"
+syn match orcaMethodBool contained "\<NewDFTHess\>"
+syn match orcaMethodBool contained "\<DOEQ\>"
+syn match orcaMethodBool contained "\<USEGRIDX\>"
+syn match orcaMethodBool contained "\<NEWGRIDX\>"
+syn match orcaMethodBool contained "\<USEFINALGRIDX\>"
+syn match orcaMethodBool contained "\<USEGRIDX3\>"
+syn match orcaMethodBool contained "\<USESFITTING\>"
+syn match orcaMethodBool contained "\<COSX_FULLSYMMETRY\>"
+syn match orcaMethodBool contained "\<USEQGRADFIT\>"
+syn match orcaMethodBool contained "\<DOROBUST\>"
+syn match orcaMethodBool contained "\<DOSFITSTYLE\>"
+syn match orcaMethodBool contained "\<COSX_PARTIALCONTRACTION\>"
+syn match orcaMethodBool contained "\<COSX_ROTINVARIANT\>"
+syn match orcaMethodBool contained "\<PRINTGRADCOMP\>"
+syn match orcaMethodBool contained "\<DOWDERIVS\>"
+syn match orcaMethodBool contained "\<HGRIDREDUCED_FIN\>"
+syn match orcaMethodBool contained "\<ROTINVARIANT_FIN\>"
+syn match orcaMethodBool contained "\<USEFINALGRID\>"
+syn match orcaMethodBool contained "\<POSTSCFGGA\>"
+syn match orcaMethodBool contained "\<DoGCP\>"
+syn match orcaMethodBool contained "\<GCP.D3MINIS\>"
+syn match orcaMethodBool contained "\<GRACLB94\>"
+syn match orcaMethodBool contained "\<GRACLB\>"
+syn match orcaMethodBool contained "\<PROPFILE\>"
+syn match orcaMethodBool contained "\<WRITEONLYINITIALPROPERTYFILE\>"
+syn match orcaMethodBool contained "\<STORECISGRAD\>"
+syn match orcaMethodBool contained "\<DONOTCH\>"
+
+syn match orcaMethodReal contained "\<SYMTHRESH\>"
+syn match orcaMethodReal contained "\<RANGESEPMU\>"
+syn match orcaMethodReal contained "\<RANGESEPSCAL\>"
+syn match orcaMethodReal contained "\<F12GAMMA\>"
+syn match orcaMethodReal contained "\<F12G_A\>"
+syn match orcaMethodReal contained "\<F12G_D\>"
+syn match orcaMethodReal contained "\<F12ORTHOTHRESH\>"
+syn match orcaMethodReal contained "\<ADFTNRTOL\>"
+syn match orcaMethodReal contained "\<ADFTXALPHA\>"
+syn match orcaMethodReal contained "\<INTACC\>"
+syn match orcaMethodReal contained "\<NTHETAMAX\>"
+syn match orcaMethodReal contained "\<BFCUT\>"
+syn match orcaMethodReal contained "\<WEIGHTCUT\>"
+syn match orcaMethodReal contained "\<WDTHRESH\>"
+syn match orcaMethodReal contained "\<DENSCUTRATIO\>"
+syn match orcaMethodReal contained "\<VDWINTACC\>"
+syn match orcaMethodReal contained "\<VDWDENSTCUT\>"
+syn match orcaMethodReal contained "\<VDWDISTTCUT\>"
+syn match orcaMethodReal contained "\<SPECIALGRIDINTACC\>"
+syn match orcaMethodReal contained "\<INTACC_X\>"
+syn match orcaMethodReal contained "\<INTACCX\>"
+syn match orcaMethodReal contained "\<SINVPIVCDTHRESH\>"
+syn match orcaMethodReal contained "\<SINVTHRESH\>"
+syn match orcaMethodReal contained "\<INTACC_X_FIN\>"
+syn match orcaMethodReal contained "\<INTACCX_FIN\>"
+syn match orcaMethodReal contained "\<INTACC_FIN\>"
+syn match orcaMethodReal contained "\<NTHETAMAX_FIN\>"
+syn match orcaMethodReal contained "\<DFTPAR\>"
+syn match orcaMethodReal contained "\<XALPHA\>"
+syn match orcaMethodReal contained "\<XBETA\>"
+syn match orcaMethodReal contained "\<XKAPPA\>"
+syn match orcaMethodReal contained "\<XLB94\>"
+syn match orcaMethodReal contained "\<XMUEPBE\>"
+syn match orcaMethodReal contained "\<CBETAPBE\>"
+syn match orcaMethodReal contained "\<ACM\>"
+syn match orcaMethodReal contained "\<ACM_A\>"
+syn match orcaMethodReal contained "\<SCALHFX\>"
+syn match orcaMethodReal contained "\<ACM_B\>"
+syn match orcaMethodReal contained "\<SCALDFXGRAD\>"
+syn match orcaMethodReal contained "\<SCALDFX\>"
+syn match orcaMethodReal contained "\<ACM_C\>"
+syn match orcaMethodReal contained "\<SCALDFCGRAD\>"
+syn match orcaMethodReal contained "\<SCALDFC\>"
+syn match orcaMethodReal contained "\<SCALGGAC\>"
+syn match orcaMethodReal contained "\<SCALLDAC\>"
+syn match orcaMethodReal contained "\<SCALMP2C\>"
+syn match orcaMethodReal contained "\<XCKERNEL_DFTPAR\>"
+syn match orcaMethodReal contained "\<XCKERNEL_XALPHA\>"
+syn match orcaMethodReal contained "\<XCKERNEL_XBETA\>"
+syn match orcaMethodReal contained "\<XCKERNEL_XKAPPA\>"
+syn match orcaMethodReal contained "\<XCKERNEL_ACM\>"
+syn match orcaMethodReal contained "\<XCKERNEL_ACM_A\>"
+syn match orcaMethodReal contained "\<XCKERNEL_SCALHFX\>"
+syn match orcaMethodReal contained "\<XCKERNEL_ACM_B\>"
+syn match orcaMethodReal contained "\<XCKERNEL_SCALDFXGRAD\>"
+syn match orcaMethodReal contained "\<XCKERNEL_SCALDFX\>"
+syn match orcaMethodReal contained "\<XCKERNEL_ACM_C\>"
+syn match orcaMethodReal contained "\<XCKERNEL_SCALDFCGRAD\>"
+syn match orcaMethodReal contained "\<XCKERNEL_SCALDFC\>"
+syn match orcaMethodReal contained "\<XCKERNEL_XMUEPBE\>"
+syn match orcaMethodReal contained "\<XCKERNEL_CBETAPBE\>"
+syn match orcaMethodReal contained "\<DFTDSCALEC6\>"
+syn match orcaMethodReal contained "\<D3S6\>"
+syn match orcaMethodReal contained "\<D3RS6\>"
+syn match orcaMethodReal contained "\<D3S8\>"
+syn match orcaMethodReal contained "\<D3ALPHA6\>"
+syn match orcaMethodReal contained "\<D3A1\>"
+syn match orcaMethodReal contained "\<D3A2\>"
+syn match orcaMethodReal contained "\<D4S9\>"
+syn match orcaMethodReal contained "\<D4S6\>"
+syn match orcaMethodReal contained "\<D4RS6\>"
+syn match orcaMethodReal contained "\<D4S8\>"
+syn match orcaMethodReal contained "\<D4ALPHA6\>"
+syn match orcaMethodReal contained "\<D4A1\>"
+syn match orcaMethodReal contained "\<D4A2\>"
+syn match orcaMethodReal contained "\<NLb\>"
+syn match orcaMethodReal contained "\<NLC\>"
+syn match orcaMethodReal contained "\<IP\>"
+syn match orcaMethodReal contained "\<GRAC_ALPHA\>"
+syn match orcaMethodReal contained "\<GRAC_BETA\>"
+syn match orcaMethodReal contained "\<LIBXCDENSITYTHRESHOLD\>"
+syn match orcaMethodReal contained "\<LIBXCZETATHRESHOLD\>"
+syn match orcaMethodReal contained "\<LIBXCTAUTHRESHOLD\>"
+syn match orcaMethodReal contained "\<LIBXCDENSITYTHRESHOLD\>"
+syn match orcaMethodReal contained "\<LIBXCZETATHRESHOLD\>"
+syn match orcaMethodReal contained "\<LIBXCTAUTHRESHOLD\>"
+syn match orcaMethodReal contained "\<Z_TOL\>"
+syn match orcaMethodReal contained "\<Z_SHIFT\>"
+syn match orcaMethodReal contained "\<Z_INTACCXC\>"
+syn match orcaMethodReal contained "\<Z_INTACCX\>"
+syn match orcaMethodReal contained "\<MAYER_BONDORDERTHRESH\>"
+syn match orcaMethodReal contained "\<LOEWDIN_BONDORDERTHRESH\>"
+
+syn keyword orcaMethodString contained
+         \ PROGGTOINT
+         \ PROGSTOINT
+         \ PROGNDOINT
+         \ PROGCASSCF
+         \ PROGSCF
+         \ PROGMP2
+         \ PROGCIS
+         \ PROGPLOT
+         \ PROGMOM
+         \ PROGMDCI
+         \ PROGMRCI
+         \ PROGCPSCF
+         \ PROGCPCASSCF
+         \ PROGMCRPA
+         \ PROGLOC
+         \ PROGVIB
+         \ PROGPC
+         \ PROGPOP
+         \ PROGCIPREP
+         \ PROGGSTEP
+         \ PROGSCFGRAD
+         \ PROGREL
+         \ PROGSOC
+         \ PROGEPRNMR
+         \ PROGMD
+         \ PROGGRAD
+         \ POINTCHARGENAME
+         \ POINTCHARGES
+         \ GCPMETHOD
+
+syn match orcaMethodAlias contained "\<FORCE_SHARK\>"
+syn match orcaMethodAlias contained "\<FORCE_LIBINT\>"
+syn match orcaMethodAlias contained "\<SHARK_LIBINT_HYBRID\>"
+syn match orcaMethodAlias contained "\<FC_ELECTRONS\>"
+syn match orcaMethodAlias contained "\<FC_EWIN\>"
+syn match orcaMethodAlias contained "\<FC_NONE\>"
+syn match orcaMethodAlias contained "\<PATOM\>"
+syn match orcaMethodAlias contained "\<HUECKEL\>"
+syn match orcaMethodAlias contained "\<ONEELEC\>"
+syn match orcaMethodAlias contained "\<MOREAD\>"
+syn match orcaMethodAlias contained "\<PMODEL\>"
+syn match orcaMethodAlias contained "\<OLDPRUNING\>"
+syn match orcaMethodAlias contained "\<UNPRUNED\>"
+syn match orcaMethodAlias contained "\<ADAPTIVE\>"
+syn match orcaMethodAlias contained "\<EXTENDED\>"
+syn match orcaMethodAlias contained "\<EXTEND\>"
+syn match orcaMethodAlias contained "\<CHOLESKY\>"
+syn match orcaMethodAlias contained "\<CHOLESKY_Q\>"
+syn match orcaMethodAlias contained "\<DIAG\>"
+syn match orcaMethodAlias contained "\<DIAG_Q\>"
+syn match orcaMethodAlias contained "\<PIVCHOLESKY\>"
+syn match orcaMethodAlias contained "\<PIVCHOLESKY_Q\>"
+syn match orcaMethodAlias contained "\<S12_CHOLESKY\>"
+syn match orcaMethodAlias contained "\<S12_PIVCHOLESKY\>"
+syn match orcaMethodAlias contained "\<K_XvX\>"
+syn match orcaMethodAlias contained "\<K_QvX\>"
+syn match orcaMethodAlias contained "\<K_XvQ\>"
+syn match orcaMethodAlias contained "\<K_QvQ\>"
+syn match orcaMethodAlias contained "\<K_QXSym\>"
+syn match orcaMethodAlias contained "\<K_QXRobust\>"
+syn match orcaMethodAlias contained "\<J_XvX\>"
+syn match orcaMethodAlias contained "\<J_QvQ\>"
+syn match orcaMethodAlias contained "\<J_QXSym\>"
+syn match orcaMethodAlias contained "\<J_QXRobust\>"
+syn match orcaMethodAlias contained "\<GRAD_N\>"
+syn match orcaMethodAlias contained "\<GRAD_A\>"
+syn match orcaMethodAlias contained "\<GRAD_W\>"
+syn match orcaMethodAlias contained "\<GRAD_AW\>"
+syn match orcaMethodAlias contained "\<GAUSSCHEBYSHEV\>"
+syn match orcaMethodAlias contained "\<EULERMCLAURIN\>"
+syn match orcaMethodAlias contained "\<RADIALDEFT\>"
+syn match orcaMethodAlias contained "\<SIMPLEGRID\>"
+syn match orcaMethodAlias contained "\<LEBEDEV50\>"
+syn match orcaMethodAlias contained "\<LEBEDEV110\>"
+syn match orcaMethodAlias contained "\<LEBEDEV194\>"
+syn match orcaMethodAlias contained "\<LEBEDEV302\>"
+syn match orcaMethodAlias contained "\<LEBEDEV434\>"
+syn match orcaMethodAlias contained "\<LEBEDEV550\>"
+syn match orcaMethodAlias contained "\<LEBEDEV770\>"
+syn match orcaMethodAlias contained "\<WEIGHT_BECKE\>"
+syn match orcaMethodAlias contained "\<WEIGHT_SS\>"
+syn match orcaMethodAlias contained "\<WEIGHT_ATOMXC\>"
+syn match orcaMethodAlias contained "\<REVPBE38\>"
+syn match orcaMethodAlias contained "\<REVPBE0\>"
+syn match orcaMethodAlias contained "\<RPW86PBE\>"
+syn match orcaMethodAlias contained "\<PW86PBE\>"
+syn match orcaMethodAlias contained "\<HFS\>"
+syn match orcaMethodAlias contained "\<LDA\>"
+syn match orcaMethodAlias contained "\<LSD\>"
+syn match orcaMethodAlias contained "\<SVWN\>"
+syn match orcaMethodAlias contained "\<HFLDA\>"
+syn match orcaMethodAlias contained "\<BP\>"
+syn match orcaMethodAlias contained "\<BP86\>"
+syn match orcaMethodAlias contained "\<BPW91\>"
+syn match orcaMethodAlias contained "\<PW91\>"
+syn match orcaMethodAlias contained "\<BLYP\>"
+syn match orcaMethodAlias contained "\<OLYP\>"
+syn match orcaMethodAlias contained "\<XLYP\>"
+syn match orcaMethodAlias contained "\<PBE\>"
+syn match orcaMethodAlias contained "\<BPBE\>"
+syn match orcaMethodAlias contained "\<B3LYP\>"
+syn match orcaMethodAlias contained "\<B3LYP_TM\>"
+syn match orcaMethodAlias contained "\<B3LYP_G\>"
+syn match orcaMethodAlias contained "\<B3PW91\>"
+syn match orcaMethodAlias contained "\<B3P86\>"
+syn match orcaMethodAlias contained "\<B3P\>"
+syn match orcaMethodAlias contained "\<B3PBE\>"
+syn match orcaMethodAlias contained "\<O3LYP\>"
+syn match orcaMethodAlias contained "\<X3LYP\>"
+syn match orcaMethodAlias contained "\<REVPBE\>"
+syn match orcaMethodAlias contained "\<RPBE\>"
+syn match orcaMethodAlias contained "\<PW91P86\>"
+syn match orcaMethodAlias contained "\<PW91P\>"
+syn match orcaMethodAlias contained "\<PWP\>"
+syn match orcaMethodAlias contained "\<PWP1\>"
+syn match orcaMethodAlias contained "\<PW91\>"
+syn match orcaMethodAlias contained "\<PW91_0\>"
+syn match orcaMethodAlias contained "\<PW1PW\>"
+syn match orcaMethodAlias contained "\<B1LYP\>"
+syn match orcaMethodAlias contained "\<B1P\>"
+syn match orcaMethodAlias contained "\<B1PW91\>"
+syn match orcaMethodAlias contained "\<B1PW\>"
+syn match orcaMethodAlias contained "\<B1PBE\>"
+syn match orcaMethodAlias contained "\<PBE0\>"
+syn match orcaMethodAlias contained "\<GLYP\>"
+syn match orcaMethodAlias contained "\<G1LYP\>"
+syn match orcaMethodAlias contained "\<G2LYP\>"
+syn match orcaMethodAlias contained "\<GP\>"
+syn match orcaMethodAlias contained "\<G1P\>"
+syn match orcaMethodAlias contained "\<G3P\>"
+syn match orcaMethodAlias contained "\<VWN5\>"
+syn match orcaMethodAlias contained "\<VWN3\>"
+syn match orcaMethodAlias contained "\<PWLDA\>"
+syn match orcaMethodAlias contained "\<BNULL\>"
+syn match orcaMethodAlias contained "\<BVWN\>"
+syn match orcaMethodAlias contained "\<LB94\>"
+syn match orcaMethodAlias contained "\<BHANDHLYP\>"
+syn match orcaMethodAlias contained "\<M06L\>"
+syn match orcaMethodAlias contained "\<M06\>"
+syn match orcaMethodAlias contained "\<M062X\>"
+syn match orcaMethodAlias contained "\<TPSS\>"
+syn match orcaMethodAlias contained "\<revTPSS\>"
+syn match orcaMethodAlias contained "\<TPSSH\>"
+syn match orcaMethodAlias contained "\<TPSS0\>"
+syn match orcaMethodAlias contained "\<MPWPW\>"
+syn match orcaMethodAlias contained "\<MPW1PW\>"
+syn match orcaMethodAlias contained "\<MPWLYP\>"
+syn match orcaMethodAlias contained "\<MPW1LYP\>"
+syn match orcaMethodAlias contained "\<PW6B95\>"
+syn match orcaMethodAlias contained "\<PWPB95\>"
+syn match orcaMethodAlias contained "\<B2PLYP\>"
+syn match orcaMethodAlias contained "\<MPW2PLYP\>"
+syn match orcaMethodAlias contained "\<WB97\>"
+syn match orcaMethodAlias contained "\<WB97X\>"
+syn match orcaMethodAlias contained "\<WB97X-D3\>"
+syn match orcaMethodAlias contained "\<CAM-B3LYP\>"
+syn match orcaMethodAlias contained "\<LC-BLYP\>"
+syn match orcaMethodAlias contained "\<B97\>"
+syn match orcaMethodAlias contained "\<B97D\>"
+syn match orcaMethodAlias contained "\<B973C\>"
+syn match orcaMethodAlias contained "\<SCANFUNC\>"
+syn match orcaMethodAlias contained "\<RSCAN\>"
+syn match orcaMethodAlias contained "\<R2SCAN\>"
+syn match orcaMethodAlias contained "\<WR2SCAN\>"
+syn match orcaMethodAlias contained "\<srLDA\>"
+syn match orcaMethodAlias contained "\<srPBE\>"
+syn match orcaMethodAlias contained "\<X_NOX\>"
+syn match orcaMethodAlias contained "\<X_SLATER\>"
+syn match orcaMethodAlias contained "\<X_BECKE\>"
+syn match orcaMethodAlias contained "\<X_B88\>"
+syn match orcaMethodAlias contained "\<X_PW\>"
+syn match orcaMethodAlias contained "\<X_PW91\>"
+syn match orcaMethodAlias contained "\<X_PBE\>"
+syn match orcaMethodAlias contained "\<X_RPBE\>"
+syn match orcaMethodAlias contained "\<X_G96\>"
+syn match orcaMethodAlias contained "\<X_LB94\>"
+syn match orcaMethodAlias contained "\<X_OPTX\>"
+syn match orcaMethodAlias contained "\<X_OPTX3\>"
+syn match orcaMethodAlias contained "\<X_X\>"
+syn match orcaMethodAlias contained "\<X_M06L\>"
+syn match orcaMethodAlias contained "\<X_M06\>"
+syn match orcaMethodAlias contained "\<X_M062X\>"
+syn match orcaMethodAlias contained "\<X_TPSS\>"
+syn match orcaMethodAlias contained "\<X_REVTPSS\>"
+syn match orcaMethodAlias contained "\<X_MPW\>"
+syn match orcaMethodAlias contained "\<X_RPW86\>"
+syn match orcaMethodAlias contained "\<X_PW86\>"
+syn match orcaMethodAlias contained "\<X_PW6\>"
+syn match orcaMethodAlias contained "\<X_B97BECKE\>"
+syn match orcaMethodAlias contained "\<X_B97D\>"
+syn match orcaMethodAlias contained "\<X_WB97\>"
+syn match orcaMethodAlias contained "\<X_WB97X\>"
+syn match orcaMethodAlias contained "\<X_WB97XD3\>"
+syn match orcaMethodAlias contained "\<X_WB97X2TQZ\>"
+syn match orcaMethodAlias contained "\<X_B973C\>"
+syn match orcaMethodAlias contained "\<X_SCAN\>"
+syn match orcaMethodAlias contained "\<X_RSCAN\>"
+syn match orcaMethodAlias contained "\<X_R2SCAN\>"
+syn match orcaMethodAlias contained "\<X_WR2SCAN\>"
+syn match orcaMethodAlias contained "\<X_WB88\>"
+syn match orcaMethodAlias contained "\<X_LRCPBE\>"
+syn match orcaMethodAlias contained "\<C_NOC\>"
+syn match orcaMethodAlias contained "\<C_VWNA\>"
+syn match orcaMethodAlias contained "\<C_VWNB\>"
+syn match orcaMethodAlias contained "\<C_VWN5\>"
+syn match orcaMethodAlias contained "\<C_VWN3\>"
+syn match orcaMethodAlias contained "\<C_PWLDA\>"
+syn match orcaMethodAlias contained "\<C_P86\>"
+syn match orcaMethodAlias contained "\<C_PW91\>"
+syn match orcaMethodAlias contained "\<C_P\>"
+syn match orcaMethodAlias contained "\<C_LYP\>"
+syn match orcaMethodAlias contained "\<C_PBE\>"
+syn match orcaMethodAlias contained "\<C_OP\>"
+syn match orcaMethodAlias contained "\<C_M06L\>"
+syn match orcaMethodAlias contained "\<C_M06\>"
+syn match orcaMethodAlias contained "\<C_M062X\>"
+syn match orcaMethodAlias contained "\<C_TPSS\>"
+syn match orcaMethodAlias contained "\<C_REVTPSS\>"
+syn match orcaMethodAlias contained "\<C_B95\>"
+syn match orcaMethodAlias contained "\<C_B97BECKE\>"
+syn match orcaMethodAlias contained "\<C_B97D\>"
+syn match orcaMethodAlias contained "\<C_WB97\>"
+syn match orcaMethodAlias contained "\<C_WB97X\>"
+syn match orcaMethodAlias contained "\<C_WB97XD3\>"
+syn match orcaMethodAlias contained "\<C_WB97X2TQZ\>"
+syn match orcaMethodAlias contained "\<C_B973C\>"
+syn match orcaMethodAlias contained "\<C_SCAN\>"
+syn match orcaMethodAlias contained "\<C_RSCAN\>"
+syn match orcaMethodAlias contained "\<C_R2SCAN\>"
+syn match orcaMethodAlias contained "\<CG\>"
+syn match orcaMethodAlias contained "\<DIIS\>"
+syn match orcaMethodAlias contained "\<POPLE\>"
+syn match orcaMethodAlias contained "\<INVERTA\>"
+syn match orcaMethodAlias contained "\<EHT\>"
+syn match orcaMethodAlias contained "\<CNDO\>"
+syn match orcaMethodAlias contained "\<INDO\>"
+syn match orcaMethodAlias contained "\<NDDO\>"
+syn match orcaMethodAlias contained "\<HFGTO\>"
+syn match orcaMethodAlias contained "\<HF\>"
+syn match orcaMethodAlias contained "\<DFGTO\>"
+syn match orcaMethodAlias contained "\<DFT\>"
+syn match orcaMethodAlias contained "\<HFSTO\>"
+syn match orcaMethodAlias contained "\<ENERGY\>"
+syn match orcaMethodAlias contained "\<SINGLEPOINT\>"
+syn match orcaMethodAlias contained "\<SP\>"
+syn match orcaMethodAlias contained "\<TRAJECTORY\>"
+syn match orcaMethodAlias contained "\<SCAN\>"
+syn match orcaMethodAlias contained "\<GEOM\>"
+syn match orcaMethodAlias contained "\<GEOMETRY\(OPT\)\?\>"
+syn match orcaMethodAlias contained "\<OPT\>"
+syn match orcaMethodAlias contained "\<GRADIENT\>"
+syn match orcaMethodAlias contained "\<CIM\>"
+syn match orcaMethodAlias contained "\<ANMR\>"
+syn match orcaMethodAlias contained "\<CONFSCRIPT\>"
+syn match orcaMethodAlias contained "\<CREGEN\>"
+syn match orcaMethodAlias contained "\<MASS\(ORIG\|2016\)\>"
+syn match orcaMethodAlias contained "\<FCNORMALMODESCAN\>"
+syn match orcaMethodAlias contained "\<FCNMSCAN\>"
+syn match orcaMethodAlias contained "\<NORMALMODESCAN\>"
+syn match orcaMethodAlias contained "\<NMSCAN\>"
+syn match orcaMethodAlias contained "\<MODETRAJECTORY\>"
+syn match orcaMethodAlias contained "\<MTRAJECTORY\>"
+syn match orcaMethodAlias contained "\<MTR\?\>"
+syn match orcaMethodAlias contained "\<NORMALMODEGRADIENT\>"
+syn match orcaMethodAlias contained "\<ENMGRADIENT\>"
+syn match orcaMethodAlias contained "\<NMGRADIENT\>"
+syn match orcaMethodAlias contained "\<ENMGRAD\>"
+syn match orcaMethodAlias contained "\<NMGRAD\>"
+syn match orcaMethodAlias contained "\<NOVERSION\>"
+syn match orcaMethodAlias contained "\<CNDO_\(1\|2\|S\)\>"
+syn match orcaMethodAlias contained "\<ZINDO_\(1\|2\|S\)\>"
+syn match orcaMethodAlias contained "\<INDO_\(1\|2\|S\)\>"
+syn match orcaMethodAlias contained "\<ZNDDO_\(1\|2\)\>"
+syn match orcaMethodAlias contained "\<NDDO_\(1\|2\|MK\)\>"
+syn match orcaMethodAlias contained "\<MNDO\>"
+syn match orcaMethodAlias contained "\<AM1\>"
+syn match orcaMethodAlias contained "\<PM3\>"
+syn match orcaMethodAlias contained "\<MNDO_D\>"
+syn match orcaMethodAlias contained "\<MP2\>"
+syn match orcaMethodAlias contained "\<GAMESS\>"
+
+syn keyword orcaMethodLogical contained TRUE YES T ON
+syn keyword orcaMethodLogical contained FALSE NO OFF
 
 syn match startBlock "%" contained
 syn keyword endBlock end contained
@@ -2281,6 +2847,7 @@ syn match coordBlock "\*\s*\(xyz\(file\)\?\|int\|internal\|gzmt\(file\)\?\|gbwfi
 syn match orcaComment "#[^#]*\(#\|$\)"
 syn region orcaString start=+"+ end=+"+
 syn match orcaNumber	display "\<\d\+\>"
+syn match orcaFloat display "\<\d\+\(\.\d\+\)\?\(e[-+]\=\d\+\)\=\>"
 
 let b:current_syntax = "orca"
 
@@ -2296,4 +2863,12 @@ hi def link orcaJob Structure
 hi def link coordBlock Define
 hi def link orcaString String
 hi def link orcaNumber Number
+hi def link orcaFloat Float
 hi def link orcaBasis Type
+
+hi def link orcaMethodInt Type
+hi def link orcaMethodBool Type
+hi def link orcaMethodReal Type
+hi def link orcaMethodString Type
+hi def link orcaMethodAlias Identifier
+hi def link orcaMethodLogical Boolean
