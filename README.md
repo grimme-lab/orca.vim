@@ -18,6 +18,11 @@ au BufRead,BufNewFile orca.inp set filetype=orca
 ```
 
 
+## Similar projects
+
+- [mrymtsk/orca-vim](https://github.com/mrymtsk/orca-vim) by Toshiki Murayama ([@mrymtsk](https://github.com/mrymtsk))
+
+
 ## License
 
 Licensed under the Apache License, Version 2.0 (the “License”);
