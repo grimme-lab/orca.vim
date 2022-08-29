@@ -9,12 +9,22 @@ Add the file in `syntax/orca.vim` to your *vim* runtime directory (*e.g.* `~/.vi
 
 
 ## File type detection
-
-Add this lines to your *vim* runtime directory in `ftdetect/orca.vim` to use the Orca syntax highlighting for all files ending in `.orca` and files named `orca.inp`.
+### Vim
+Add these lines to your *vim* runtime directory in `ftdetect/orca.vim` to use the Orca syntax highlighting for all files ending in `.orca` and files named `orca.inp`.
 
 ```vim
+" For vim >= 8
 au BufRead,BufNewFile *.orca set filetype=orca
 au BufRead,BufNewFile orca.inp set filetype=orca
+```
+### Neovim
+Add these lines to your *lua* configuration files to use the Orca syntax highlighting for all files ending in `.orca` and files named `orca.inp`.
+```lua
+-- For neovim >= 0.8
+local create_autocmd = vim.api.nvim_create_autocmd
+local events = {"BufRead", "BufNewFile"}
+create_autocmd(events, { pattern = {"*.orca"}, command = [[ set filetype=orca ]]})
+create_autocmd(events, { pattern = {"orca.inp"}, command = [[ set filetype=orca ]]})
 ```
 
 
